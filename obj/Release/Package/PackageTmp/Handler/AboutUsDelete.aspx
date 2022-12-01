@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AboutUsDelete.aspx.cs" Inherits="SchoolInfo.Handler.AboutUsDelete" %>

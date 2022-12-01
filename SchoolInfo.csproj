@@ -1,0 +1,733 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CBF1068E-B718-4524-A342-6701930DDA04}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SchoolInfo</RootNamespace>
+    <AssemblyName>SchoolInfo</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\AboutUs.aspx" />
+    <Content Include="Admin\AdminIndex.aspx" />
+    <Content Include="Admin\AdminLogin.aspx" />
+    <Content Include="Admin\BenefitsAdd.aspx" />
+    <Content Include="Admin\BenefitsList.aspx" />
+    <Content Include="Admin\BenefitsUpdate.aspx" />
+    <Content Include="Admin\CampusAdd.aspx" />
+    <Content Include="Admin\CampusList.aspx" />
+    <Content Include="Admin\CampusUpdate.aspx" />
+    <Content Include="Admin\ClubAdd.aspx" />
+    <Content Include="Admin\ClubEventAdd.aspx" />
+    <Content Include="Admin\ClubEventList.aspx" />
+    <Content Include="Admin\ClubEventUpdate.aspx" />
+    <Content Include="Admin\ClubList.aspx" />
+    <Content Include="Admin\ClubUpdate.aspx" />
+    <Content Include="Admin\ContactAdd.aspx" />
+    <Content Include="Admin\ContactList.aspx" />
+    <Content Include="Admin\ContactUpdate.aspx" />
+    <Content Include="Admin\EduationAdd.aspx" />
+    <Content Include="Admin\EduationList.aspx" />
+    <Content Include="Admin\EduationUpdate.aspx" />
+    <Content Include="Admin\EventAdd.aspx" />
+    <Content Include="Admin\EventList.aspx" />
+    <Content Include="Admin\EventUpdate.aspx" />
+    <Content Include="Admin\Facibility.aspx" />
+    <Content Include="Admin\InternetAdd.aspx" />
+    <Content Include="Admin\InternetList.aspx" />
+    <Content Include="Admin\InternetUpdate.aspx" />
+    <Content Include="Admin\Main.aspx" />
+    <Content Include="Admin\MCList.aspx" />
+    <Content Include="Admin\MedicalAdd.aspx" />
+    <Content Include="Admin\MedicalList.aspx" />
+    <Content Include="Admin\MedicalUpdate.aspx" />
+    <Content Include="Admin\NoticeAdd.aspx" />
+    <Content Include="Admin\NoticeList.aspx" />
+    <Content Include="Admin\NoticeUpdate.aspx" />
+    <Content Include="Admin\Passport.aspx" />
+    <Content Include="Admin\PaymentAdd.aspx" />
+    <Content Include="Admin\PaymentList.aspx" />
+    <Content Include="Admin\PaymentUpdate.aspx" />
+    <Content Include="Admin\TimetableAdd.aspx" />
+    <Content Include="Admin\TimetableList.aspx" />
+    <Content Include="Admin\TimetableUpdate.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Handler\AboutUsDelete.aspx" />
+    <Content Include="Handler\BenefitsDelete.aspx" />
+    <Content Include="Handler\CampusDelete.aspx" />
+    <Content Include="Handler\ClubDelete.aspx" />
+    <Content Include="Handler\ClubEventDelete.aspx" />
+    <Content Include="Handler\ContactDelete.aspx" />
+    <Content Include="Handler\EduationDelete.aspx" />
+    <Content Include="Handler\EventDelete.aspx" />
+    <Content Include="Handler\FacibilityDelete.aspx" />
+    <Content Include="Handler\InternetDelete.aspx" />
+    <Content Include="Handler\MCDelete.aspx" />
+    <Content Include="Handler\MedicalDelete.aspx" />
+    <Content Include="Handler\NoticeDelete.aspx" />
+    <Content Include="Handler\PassportDelete.aspx" />
+    <Content Include="Handler\PaymentDelete.aspx" />
+    <Content Include="Handler\TimeableDelete.aspx" />
+    <Content Include="UI\AboutUs.aspx" />
+    <Content Include="UI\Benefits.aspx" />
+    <Content Include="UI\Campus.aspx" />
+    <Content Include="UI\Campus_Detail.aspx" />
+    <Content Include="UI\Club.aspx" />
+    <Content Include="UI\Eduation.aspx" />
+    <Content Include="UI\Event.aspx" />
+    <Content Include="UI\Facibility.aspx" />
+    <Content Include="UI\Index.aspx" />
+    <Content Include="UI\Internet.aspx" />
+    <Content Include="UI\MC.aspx" />
+    <Content Include="UI\Medical.aspx" />
+    <Content Include="UI\NeedHelp.aspx" />
+    <Content Include="UI\Notice.aspx" />
+    <Content Include="UI\Passport.aspx" />
+    <Content Include="UI\Payment.aspx" />
+    <Content Include="UI\Timeable.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\AboutUs.aspx.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AboutUs.aspx.designer.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminIndex.aspx.cs">
+      <DependentUpon>AdminIndex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminIndex.aspx.designer.cs">
+      <DependentUpon>AdminIndex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminLogin.aspx.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminLogin.aspx.designer.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\BenefitsAdd.aspx.cs">
+      <DependentUpon>BenefitsAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\BenefitsAdd.aspx.designer.cs">
+      <DependentUpon>BenefitsAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\BenefitsList.aspx.cs">
+      <DependentUpon>BenefitsList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\BenefitsList.aspx.designer.cs">
+      <DependentUpon>BenefitsList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\BenefitsUpdate.aspx.cs">
+      <DependentUpon>BenefitsUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\BenefitsUpdate.aspx.designer.cs">
+      <DependentUpon>BenefitsUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\CampusAdd.aspx.cs">
+      <DependentUpon>CampusAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\CampusAdd.aspx.designer.cs">
+      <DependentUpon>CampusAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\CampusList.aspx.cs">
+      <DependentUpon>CampusList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\CampusList.aspx.designer.cs">
+      <DependentUpon>CampusList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\CampusUpdate.aspx.cs">
+      <DependentUpon>CampusUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\CampusUpdate.aspx.designer.cs">
+      <DependentUpon>CampusUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ClubAdd.aspx.cs">
+      <DependentUpon>ClubAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ClubAdd.aspx.designer.cs">
+      <DependentUpon>ClubAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ClubEventAdd.aspx.cs">
+      <DependentUpon>ClubEventAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ClubEventAdd.aspx.designer.cs">
+      <DependentUpon>ClubEventAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ClubEventList.aspx.cs">
+      <DependentUpon>ClubEventList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ClubEventList.aspx.designer.cs">
+      <DependentUpon>ClubEventList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ClubEventUpdate.aspx.cs">
+      <DependentUpon>ClubEventUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ClubEventUpdate.aspx.designer.cs">
+      <DependentUpon>ClubEventUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ClubList.aspx.cs">
+      <DependentUpon>ClubList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ClubList.aspx.designer.cs">
+      <DependentUpon>ClubList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ClubUpdate.aspx.cs">
+      <DependentUpon>ClubUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ClubUpdate.aspx.designer.cs">
+      <DependentUpon>ClubUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ContactAdd.aspx.cs">
+      <DependentUpon>ContactAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ContactAdd.aspx.designer.cs">
+      <DependentUpon>ContactAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ContactList.aspx.cs">
+      <DependentUpon>ContactList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ContactList.aspx.designer.cs">
+      <DependentUpon>ContactList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ContactUpdate.aspx.cs">
+      <DependentUpon>ContactUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ContactUpdate.aspx.designer.cs">
+      <DependentUpon>ContactUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EduationAdd.aspx.cs">
+      <DependentUpon>EduationAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\EduationAdd.aspx.designer.cs">
+      <DependentUpon>EduationAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EduationList.aspx.cs">
+      <DependentUpon>EduationList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\EduationList.aspx.designer.cs">
+      <DependentUpon>EduationList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EduationUpdate.aspx.cs">
+      <DependentUpon>EduationUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\EduationUpdate.aspx.designer.cs">
+      <DependentUpon>EduationUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EventAdd.aspx.cs">
+      <DependentUpon>EventAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\EventAdd.aspx.designer.cs">
+      <DependentUpon>EventAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EventList.aspx.cs">
+      <DependentUpon>EventList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\EventList.aspx.designer.cs">
+      <DependentUpon>EventList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EventUpdate.aspx.cs">
+      <DependentUpon>EventUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\EventUpdate.aspx.designer.cs">
+      <DependentUpon>EventUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Facibility.aspx.cs">
+      <DependentUpon>Facibility.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Facibility.aspx.designer.cs">
+      <DependentUpon>Facibility.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\InternetAdd.aspx.cs">
+      <DependentUpon>InternetAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\InternetAdd.aspx.designer.cs">
+      <DependentUpon>InternetAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\InternetList.aspx.cs">
+      <DependentUpon>InternetList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\InternetList.aspx.designer.cs">
+      <DependentUpon>InternetList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\InternetUpdate.aspx.cs">
+      <DependentUpon>InternetUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\InternetUpdate.aspx.designer.cs">
+      <DependentUpon>InternetUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Main.aspx.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Main.aspx.designer.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\MCList.aspx.cs">
+      <DependentUpon>MCList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\MCList.aspx.designer.cs">
+      <DependentUpon>MCList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\MedicalAdd.aspx.cs">
+      <DependentUpon>MedicalAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\MedicalAdd.aspx.designer.cs">
+      <DependentUpon>MedicalAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\MedicalList.aspx.cs">
+      <DependentUpon>MedicalList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\MedicalList.aspx.designer.cs">
+      <DependentUpon>MedicalList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\MedicalUpdate.aspx.cs">
+      <DependentUpon>MedicalUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\MedicalUpdate.aspx.designer.cs">
+      <DependentUpon>MedicalUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\NoticeAdd.aspx.cs">
+      <DependentUpon>NoticeAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\NoticeAdd.aspx.designer.cs">
+      <DependentUpon>NoticeAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\NoticeList.aspx.cs">
+      <DependentUpon>NoticeList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\NoticeList.aspx.designer.cs">
+      <DependentUpon>NoticeList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\NoticeUpdate.aspx.cs">
+      <DependentUpon>NoticeUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\NoticeUpdate.aspx.designer.cs">
+      <DependentUpon>NoticeUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Passport.aspx.cs">
+      <DependentUpon>Passport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Passport.aspx.designer.cs">
+      <DependentUpon>Passport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\PaymentAdd.aspx.cs">
+      <DependentUpon>PaymentAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\PaymentAdd.aspx.designer.cs">
+      <DependentUpon>PaymentAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\PaymentList.aspx.cs">
+      <DependentUpon>PaymentList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\PaymentList.aspx.designer.cs">
+      <DependentUpon>PaymentList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\PaymentUpdate.aspx.cs">
+      <DependentUpon>PaymentUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\PaymentUpdate.aspx.designer.cs">
+      <DependentUpon>PaymentUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\TimetableAdd.aspx.cs">
+      <DependentUpon>TimetableAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\TimetableAdd.aspx.designer.cs">
+      <DependentUpon>TimetableAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\TimetableList.aspx.cs">
+      <DependentUpon>TimetableList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\TimetableList.aspx.designer.cs">
+      <DependentUpon>TimetableList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\TimetableUpdate.aspx.cs">
+      <DependentUpon>TimetableUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\TimetableUpdate.aspx.designer.cs">
+      <DependentUpon>TimetableUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\AboutUsDelete.aspx.cs">
+      <DependentUpon>AboutUsDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handler\AboutUsDelete.aspx.designer.cs">
+      <DependentUpon>AboutUsDelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\BenefitsDelete.aspx.cs">
+      <DependentUpon>BenefitsDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handler\BenefitsDelete.aspx.designer.cs">
+      <DependentUpon>BenefitsDelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\CampusDelete.aspx.cs">
+      <DependentUpon>CampusDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handler\CampusDelete.aspx.designer.cs">
+      <DependentUpon>CampusDelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\ClubDelete.aspx.cs">
+      <DependentUpon>ClubDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handler\ClubDelete.aspx.designer.cs">
+      <DependentUpon>ClubDelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\ClubEventDelete.aspx.cs">
+      <DependentUpon>ClubEventDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handler\ClubEventDelete.aspx.designer.cs">
+      <DependentUpon>ClubEventDelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\ContactDelete.aspx.cs">
+      <DependentUpon>ContactDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handler\ContactDelete.aspx.designer.cs">
+      <DependentUpon>ContactDelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\EduationDelete.aspx.cs">
+      <DependentUpon>EduationDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handler\EduationDelete.aspx.designer.cs">
+      <DependentUpon>EduationDelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\EventDelete.aspx.cs">
+      <DependentUpon>EventDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handler\EventDelete.aspx.designer.cs">
+      <DependentUpon>EventDelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\FacibilityDelete.aspx.cs">
+      <DependentUpon>FacibilityDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handler\FacibilityDelete.aspx.designer.cs">
+      <DependentUpon>FacibilityDelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\InternetDelete.aspx.cs">
+      <DependentUpon>InternetDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handler\InternetDelete.aspx.designer.cs">
+      <DependentUpon>InternetDelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\MCDelete.aspx.cs">
+      <DependentUpon>MCDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handler\MCDelete.aspx.designer.cs">
+      <DependentUpon>MCDelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\MedicalDelete.aspx.cs">
+      <DependentUpon>MedicalDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handler\MedicalDelete.aspx.designer.cs">
+      <DependentUpon>MedicalDelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\NoticeDelete.aspx.cs">
+      <DependentUpon>NoticeDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handler\NoticeDelete.aspx.designer.cs">
+      <DependentUpon>NoticeDelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\PassportDelete.aspx.cs">
+      <DependentUpon>PassportDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handler\PassportDelete.aspx.designer.cs">
+      <DependentUpon>PassportDelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\PaymentDelete.aspx.cs">
+      <DependentUpon>PaymentDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handler\PaymentDelete.aspx.designer.cs">
+      <DependentUpon>PaymentDelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\TimeableDelete.aspx.cs">
+      <DependentUpon>TimeableDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handler\TimeableDelete.aspx.designer.cs">
+      <DependentUpon>TimeableDelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\AboutUs.aspx.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\AboutUs.aspx.designer.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Benefits.aspx.cs">
+      <DependentUpon>Benefits.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Benefits.aspx.designer.cs">
+      <DependentUpon>Benefits.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Campus.aspx.cs">
+      <DependentUpon>Campus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Campus.aspx.designer.cs">
+      <DependentUpon>Campus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Campus_Detail.aspx.cs">
+      <DependentUpon>Campus_Detail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Campus_Detail.aspx.designer.cs">
+      <DependentUpon>Campus_Detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Club.aspx.cs">
+      <DependentUpon>Club.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Club.aspx.designer.cs">
+      <DependentUpon>Club.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Eduation.aspx.cs">
+      <DependentUpon>Eduation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Eduation.aspx.designer.cs">
+      <DependentUpon>Eduation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Event.aspx.cs">
+      <DependentUpon>Event.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Event.aspx.designer.cs">
+      <DependentUpon>Event.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Facibility.aspx.cs">
+      <DependentUpon>Facibility.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Facibility.aspx.designer.cs">
+      <DependentUpon>Facibility.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Internet.aspx.cs">
+      <DependentUpon>Internet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Internet.aspx.designer.cs">
+      <DependentUpon>Internet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MC.aspx.cs">
+      <DependentUpon>MC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\MC.aspx.designer.cs">
+      <DependentUpon>MC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Medical.aspx.cs">
+      <DependentUpon>Medical.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Medical.aspx.designer.cs">
+      <DependentUpon>Medical.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\NeedHelp.aspx.cs">
+      <DependentUpon>NeedHelp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\NeedHelp.aspx.designer.cs">
+      <DependentUpon>NeedHelp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Notice.aspx.cs">
+      <DependentUpon>Notice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Notice.aspx.designer.cs">
+      <DependentUpon>Notice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Passport.aspx.cs">
+      <DependentUpon>Passport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Passport.aspx.designer.cs">
+      <DependentUpon>Passport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Payment.aspx.cs">
+      <DependentUpon>Payment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Payment.aspx.designer.cs">
+      <DependentUpon>Payment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Timeable.aspx.cs">
+      <DependentUpon>Timeable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Timeable.aspx.designer.cs">
+      <DependentUpon>Timeable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\SQLServerUtil.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Assets\img\" />
+    <Folder Include="Uploads\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\PublishProfiles\FreshmanUONwebsite - Web Deploy.pubxml" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>4993</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

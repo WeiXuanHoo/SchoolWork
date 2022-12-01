@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="MCDelete.aspx.cs" Inherits="SchoolInfo.Handler.MCDelete" %>

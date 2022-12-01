@@ -1,0 +1,21 @@
+D:\school\bachelor degree\last term\3851B\project\complete\SchoolInfo\SchoolInfo\bin\SchoolInfo.dll.config
+D:\school\bachelor degree\last term\3851B\project\complete\SchoolInfo\SchoolInfo\bin\SchoolInfo.dll
+D:\school\bachelor degree\last term\3851B\project\complete\SchoolInfo\SchoolInfo\bin\SchoolInfo.pdb
+D:\school\bachelor degree\last term\3851B\project\complete\SchoolInfo\SchoolInfo\obj\Debug\SchoolInfo.csproj.AssemblyReference.cache
+D:\school\bachelor degree\last term\3851B\project\complete\SchoolInfo\SchoolInfo\obj\Debug\SchoolInfo.csproj.CoreCompileInputs.cache
+D:\school\bachelor degree\last term\3851B\project\complete\SchoolInfo\SchoolInfo\obj\Debug\SchoolInfo.dll
+D:\school\bachelor degree\last term\3851B\project\complete\SchoolInfo\SchoolInfo\obj\Debug\SchoolInfo.pdb
+D:\A-Projects\学校信息发布\SchoolInfo\SchoolInfo\bin\SchoolInfo.dll.config
+D:\A-Projects\学校信息发布\SchoolInfo\SchoolInfo\bin\SchoolInfo.dll
+D:\A-Projects\学校信息发布\SchoolInfo\SchoolInfo\bin\SchoolInfo.pdb
+D:\A-Projects\学校信息发布\SchoolInfo\SchoolInfo\obj\Debug\SchoolInfo.csproj.AssemblyReference.cache
+D:\A-Projects\学校信息发布\SchoolInfo\SchoolInfo\obj\Debug\SchoolInfo.csproj.CoreCompileInputs.cache
+D:\A-Projects\学校信息发布\SchoolInfo\SchoolInfo\obj\Debug\SchoolInfo.dll
+D:\A-Projects\学校信息发布\SchoolInfo\SchoolInfo\obj\Debug\SchoolInfo.pdb
+C:\Users\hooxu\Desktop\SchoolInfo-20221130-2\SchoolInfo\SchoolInfo\bin\SchoolInfo.dll.config
+C:\Users\hooxu\Desktop\SchoolInfo-20221130-2\SchoolInfo\SchoolInfo\bin\SchoolInfo.dll
+C:\Users\hooxu\Desktop\SchoolInfo-20221130-2\SchoolInfo\SchoolInfo\bin\SchoolInfo.pdb
+C:\Users\hooxu\Desktop\SchoolInfo-20221130-2\SchoolInfo\SchoolInfo\obj\Debug\SchoolInfo.csproj.AssemblyReference.cache
+C:\Users\hooxu\Desktop\SchoolInfo-20221130-2\SchoolInfo\SchoolInfo\obj\Debug\SchoolInfo.csproj.CoreCompileInputs.cache
+C:\Users\hooxu\Desktop\SchoolInfo-20221130-2\SchoolInfo\SchoolInfo\obj\Debug\SchoolInfo.dll
+C:\Users\hooxu\Desktop\SchoolInfo-20221130-2\SchoolInfo\SchoolInfo\obj\Debug\SchoolInfo.pdb

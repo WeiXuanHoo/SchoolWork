@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="ConnStr-Web.config Connection String" description="ConnStr Connection String used in web.config by the application to access the database." defaultValue="Data Source=LAPTOP-AIUKV513\SQLEXPRESS;Initial Catalog=SchoolInfo;User ID=school_user;Password=123456" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\hooxu\\Desktop\\SchoolInfo-20221130-2\\SchoolInfo\\SchoolInfo\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='ConnStr']/@connectionString" />
+  </parameter>
+</parameters>

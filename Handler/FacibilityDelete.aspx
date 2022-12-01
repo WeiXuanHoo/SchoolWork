@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="FacibilityDelete.aspx.cs" Inherits="SchoolInfo.Handler.FacibilityDelete" %>

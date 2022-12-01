@@ -1,0 +1,7 @@
+C:\Users\hooxu\Desktop\SchoolInfo-20221130-2\SchoolInfo\SchoolInfo\bin\SchoolInfo.dll.config
+C:\Users\hooxu\Desktop\SchoolInfo-20221130-2\SchoolInfo\SchoolInfo\bin\SchoolInfo.dll
+C:\Users\hooxu\Desktop\SchoolInfo-20221130-2\SchoolInfo\SchoolInfo\bin\SchoolInfo.pdb
+C:\Users\hooxu\Desktop\SchoolInfo-20221130-2\SchoolInfo\SchoolInfo\obj\Release\SchoolInfo.csproj.AssemblyReference.cache
+C:\Users\hooxu\Desktop\SchoolInfo-20221130-2\SchoolInfo\SchoolInfo\obj\Release\SchoolInfo.csproj.CoreCompileInputs.cache
+C:\Users\hooxu\Desktop\SchoolInfo-20221130-2\SchoolInfo\SchoolInfo\obj\Release\SchoolInfo.dll
+C:\Users\hooxu\Desktop\SchoolInfo-20221130-2\SchoolInfo\SchoolInfo\obj\Release\SchoolInfo.pdb
